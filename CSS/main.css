@@ -1,0 +1,37 @@
+/* Estilos básicos */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #b19ab5;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+    color: yellow;
+    font-weight: bolder; 
+    font-size: 15rem;
+    font-style: oblique;
+    text-align: center;
+}
+h2,
+h3 {
+	color: #333;
+}
+
+section {
+    color: rgb(179, 255, 0);
+    font-size: 5rem;
+    font-weight: lighter;
+    text-align: center;
+    font-style: italic;
+}
+
+#Inicio {
+    font-weight: bolder;
+}
+
+.emphasis {
+    text-align: center;
+    font-size: 10rem;
+    color: rgb(255, 162, 0);
+}
