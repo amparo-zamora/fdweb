@@ -1,63 +1,60 @@
 /* Estilos básicos */
 body {
-	font-family: Arial, sans-serif;
-	background-color: #35314a;
-	margin: 0;
-	padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #a9c499;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-    color: yellow;
-    font-weight: bolder; 
-    font-size: 15rem;
-    font-style: oblique;
-    text-align: center;
+  color: yellow;
+  font-weight: bolder;
+  font-size: 13rem;
+  font-style: oblique;
+  text-align: center;
 }
 h2 {
-    color: #ffffff
- 
+  color: #ffffff;
 }
 h3 {
-	color: #dfdfdf;
+  color: #dfdfdf;
 }
 
 section {
-    color: rgb(179, 255, 0);
-    font-size: 5rem;
-    font-weight: lighter;
-    text-align: center;
-    font-style: italic;
+  color: rgb(179, 255, 0);
+  font-size: 5rem;
+  font-weight: lighter;
+  text-align: center;
+  font-style: italic;
 }
 
-
-
 #Inicio {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .emphasis {
-    text-align: center;
-    font-size: 10rem;
-    color: rgb(255, 162, 0);
+  text-align: center;
+  font-size: 10rem;
+  color: rgb(255, 162, 0);
 }
 nav ul {
-	list-style-type: none;
-	display: flex;
-	justify-content: space-around;
-	background-color: #9886af;
-	padding: 10px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  background-color: #9886af;
+  padding: 10px;
 }
 
 nav ul li a {
-	text-decoration: none;
-	color: rgb(186, 182, 187);
-	padding: 10px 20px;
-	display: inline-block;
+  text-decoration: none;
+  color: rgb(186, 182, 187);
+  padding: 10px 20px;
+  display: inline-block;
 }
 nav ul li:first-child a {
-	border-left: 3px solid yellow;
+  border-left: 3px solid yellow;
 }
 nav ul li a:hover {
-	background-color: #f3f175;
-	transition: background-color 0.3s ease;
+  background-color: #f3f175;
+  transition: background-color 0.3s ease;
 }
