@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "OCR-A";
+  src: url("../Assets/fonts/OCRA.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OCR-B";
+  src: url("/fdweb-2/Assets/fonts/Machine-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}

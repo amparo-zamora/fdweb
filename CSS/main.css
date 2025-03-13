@@ -5,6 +5,13 @@ body {
   margin: 0;
   padding: 0;
 }
+p {
+  font-family: "OCR-B";
+}
+
+h2 {
+  font-family: "OCR-A";
+}
 
 h1 {
   color: yellow;
