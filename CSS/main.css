@@ -6,11 +6,12 @@ body {
   padding: 0;
 }
 p {
-  font-family: "OCR-B";
+  font-family: "beckan";
 }
 
-h2 {
-  font-family: "OCR-A";
+h1 {
+  font-family: "beckan";
+  letter-spacing: 10px;
 }
 
 h1 {

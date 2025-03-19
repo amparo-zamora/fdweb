@@ -10,3 +10,9 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "beckan";
+  src: url("../Assets/fonts/Beckan-Personal\ Use\ \(1\).woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
