@@ -13,7 +13,6 @@
 body {
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
   font-style: normal;
   background-color: var(--color-fondo);
   color: var(--color-texto);
@@ -52,6 +51,12 @@ body {
   height: 100%;
   margin-left: -1.7%;
 }
+
+.entrega-1-info {
+  background-color: var(--color-septenary);
+  margin: 192px 0px 0px 0px;
+}
+
 .info-entregas {
   font-family: "Katibeh", serif;
   font-size: 60px;
