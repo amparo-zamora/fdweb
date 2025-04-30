@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galería Masonry con Columnas</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background: #f4f4f4;
+        padding: 2rem;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .masonry-column {
+        column-count: 1;
+        column-gap: 1rem;
+      }
+
+      .masonry-column img {
+        width: 100%;
+        margin-bottom: 1rem;
+        border-radius: 6px;
+        display: block;
+        break-inside: avoid;
+      }
+      @media (min-width: 481px) {
+        .masonry-column {
+          column-count: 2;
+        }
+      }
+
+      @media (min-width: 769px) {
+        .masonry-column {
+          column-count: 3;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Galería Masonry (Columnas)</h1>
+    <section class="masonry-column">
+      <img
+        src="https://images.unsplash.com/photo-1588282322673-c31965a75c3e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1351&amp;q=80"
+        alt=""
+        alt="imagen 1"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1588117472013-59bb13edafec?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=500&amp;q=60"
+        alt="imagen 2"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1519985176271-adb1088fa94c"
+        alt="imagen 3"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
+        alt="imagen 4"
+      />
+      <img
+        src="https://images.unsplash.com/photo-1588247866001-68fa8c438dd7?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=564&amp;q=80"
+        alt="imagen 5"
+      />
+    </section>
+  </body>
+</html>
