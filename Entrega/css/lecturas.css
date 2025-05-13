@@ -1,0 +1,223 @@
+:root {
+  --color-fondo: #f7ddef;
+  --color-texto: #232220;
+  --color-tertiary: #bbcebb;
+  --color-quaternary: #ffb3c1;
+  --color-quinary: #f2b685;
+  --color-senary: #ec8492;
+  --color-septenary: #e68143;
+  --color-octonary: #d7f3ff;
+  --color-nonary: #cdceec;
+}
+.imagen-inicio {
+  height: 120px;
+  width: 120px;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+}
+
+.topheader {
+  padding: 30px;
+}
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.menu li {
+  padding: 0 35px 0 0;
+}
+
+.menu a {
+  color: var(--color-texto);
+  font-family: roboto condensed;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 120px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul li a:hover {
+  color: var(--color-senary);
+  transition: all 0.3s ease;
+}
+.open-menu,
+.close-menu {
+  display: none;
+}
+.titulo {
+  font-size: 90px;
+  color: var(--color-texto);
+  text-align: center;
+  font-family: katibeh, sans-serif;
+}
+.parrafo1 {
+  font-size: 25px;
+  color: var(--color-texto);
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  margin: -75px 0 0 0;
+}
+
+/* Reset de estilos básicos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Estilos de la galería usando CSS Grid */
+.masonry-column {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas por defecto */
+  gap: 1rem;
+  padding: 20px 8%;
+}
+
+.masonry-column .box {
+  background-color: var(--color-quinary);
+  padding: 15px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  break-inside: avoid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.masonry-column .box img {
+  width: 100%; /* Mantiene las imágenes en su tamaño original */
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.masonry-column .box h2 {
+  font-size: 20px;
+  color: var(--color-texto);
+  padding-bottom: 5px;
+}
+
+.masonry-column .box .descripcion {
+  font-size: 14px;
+  color: var(--color-texto);
+}
+
+/* Para pantallas medianas (tablets) */
+@media (max-width: 768px) {
+  .masonry-column {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  }
+}
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+  .masonry-column {
+    grid-template-columns: 1fr; /* 1 columna */
+  }
+}
+@media (max-width: 950px) {
+  /* Menu */
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: var(--color-tertiary);
+    color: var(--color-senary);
+    height: 100%;
+    overflow-y: auto;
+
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .menu a {
+    color: var(--color-senary);
+    line-height: 60px;
+  }
+
+  .open-menu {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .close-menu {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+  }
+
+  .menu_opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .imagen-inicio {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* página inicio */
+  .titulo {
+    font-size: 50px;
+    color: var(--color-texto);
+    text-align: center;
+    font-family: Katibeh, sans-serif;
+  }
+  .parrafo1 {
+    font-size: 20px;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  .p2 {
+    font-size: 15px;
+    color: var(--color-texto);
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+}

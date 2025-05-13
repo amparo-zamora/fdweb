@@ -60,6 +60,113 @@ ul li a:hover {
 .close-menu {
   display: none;
 }
+/* página inicio */
+
+.barra-avance {
+  width: 60%;
+  height: auto;
+  margin: -120px 0px 0px 80px;
+  position: relative;
+  z-index: 1;
+}
+.titulo {
+  font-size: 90px;
+  color: var(--color-texto);
+  text-align: center;
+  font-family: Katibeh, sans-serif;
+  padding: 30px;
+}
+.parrafo1 {
+  font-size: 25px;
+  color: var(--color-texto);
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 30;
+ 
+}
+.p2 {
+  font-size: 20px;
+  color: var(--color-texto);
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 30px;
+}
+.curvas {
+  width: 100%;
+  height: auto;
+  margin: -900px 0px 0px 0px;
+  position: relative;
+  z-index: -1;
+}
+
+.sapito-container {
+  position: absolute;
+  bottom: 100px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  display: flex;
+  justify-content: space-between; 
+  width: 80%; 
+  margin: 0 0 -600px 0;ç
+  
+}
+
+.sapito {
+  width: 100px;
+  height: 100px;
+  opacity: 0.75;
+}
+
+/* Estilos generales calificación */
+.calificacion {
+  font-family: Roboto condensed, sans-serif;
+  padding: 20px;
+  background-color: var(--color-nonary);
+  color: var(--color-texto);
+  border-radius: 10px;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.left-content h2 {
+  font-family: katibeh, sans-serif;
+  text-align: left;
+  font-size: 4rem;
+  color:var(--color-texto)
+}
+
+.left-content p {
+  text-align: left;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; 
+}
+
+.criterios {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--color-senary);
+  text-align: right;
+}
 
 @media (max-width: 950px) {
   /* Menu */
@@ -113,5 +220,72 @@ ul li a:hover {
   .imagen-inicio {
     width: 100px;
     height: 100px;
+  }
+
+  /* página inicio */
+  .titulo {
+    font-size: 50px;
+    color: var(--color-texto);
+    text-align: center;
+    font-family: Katibeh, sans-serif;
+  }
+  .parrafo1 {
+    font-size: 20px;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    margin: 0px 0 0 0;
+  }
+  .p2 {
+    font-size: 15px;
+    color: var(--color-texto);
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  .barra-avance {
+    width: 100%;
+    height: auto;
+    margin: -170px 0px 0px 13px;
+  }
+  .calificacion {
+    padding: 15px;
+    width: 100%;
+    margin: 0 0 0 0;
+  }
+  /* Centrar los elementos de la izquierda (título y párrafos) */
+  .left-content {
+    align-items: center; /* Centra los elementos */
+    text-align: center; /* Alinea el texto */
+  }
+  .left-content h2 {
+    font-size: 1.8rem; /* Ajustar tamaño de fuente para pantallas pequeñas */
+  }
+  .left-content p {
+    font-size: 1rem; /* Ajusta el tamaño del texto */
+  }
+  /* Centrar los criterios a la derecha */
+  .right-content {
+    align-items: center;
+    text-align: center; /* Centra el texto de los criterios */
+  }
+  .criterios {
+    font-size: 0.9rem; /* Ajusta el tamaño de los criterios */
+  }
+  /* Ajuste de la imagen de las curvas (graphics3) */
+  .curvas {
+    max-width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block;
+    margin: -600px 0 0 0; /* Centra la imagen */
+  }
+  /* Ajuste de los sapitos */
+  .sapito-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los sapitos se ajusten mejor */
+    gap: 10px; /* Añade espacio entre los sapitos */
+    margin: 0 0 0 0 ;
+  }
+  .sapito {
+    width: 80px; /* Ajusta el tamaño de los sapitos */
+    height: auto;
   }
 }
