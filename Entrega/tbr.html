@@ -47,11 +47,56 @@
           <li><a href="tbr.html">TBR</a></li>
         </ul>
       </nav>
-    </header>
-    <h1 class="titulo">Meta 2025</h1>
-    <p class="parrafo1">
-      La meta de este año es leer 25 libros en honor al año :)
-    </p>
-    <p class="p2">(... leer 2025 libros es un poco difícil)</p>
-  </body>
+      <header>
+        <h1 class="titulo">TBR</h1>
+		<style>
+			
+
+			.masonry-column {
+				column-count: 3;
+				column-gap: 1rem;
+			}
+
+			.masonry-column img {
+				width: 100%;
+				margin-bottom: 1rem;
+				border-radius: 6px;
+				display: block;
+				break-inside: avoid;
+			}
+
+			@media (max-width: 768px) {
+				.masonry-column {
+					column-count: 2;
+				}
+			}
+
+			@media (max-width: 480px) {
+				.masonry-column {
+					column-count: 1;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<section class="masonry-column">
+			<img src="ASSETS/icons/acotar.jpg" alt="imagen 1" />
+			<img src="ASSETS/icons/el priorato.jpg" alt="imagen 2" />
+			<img src="ASSETS/icons/fireborne.jpg" alt="imagen 3" />
+			<img src="ASSETS/icons/glow eve.jpg" alt="imagen 4" />
+			<img src="ASSETS/icons/la guerra huracanes.jpeg" alt="imagen 5" />
+            <img src="ASSETS/icons/la guerra.jpg" alt="imagen 5" />
+            <img src="ASSETS/icons/magnolia.jpg" alt="imagen 5" />
+            <img src="ASSETS/icons/trono de .jpg" alt="imagen 5" />
+   
+		</section>
+        <footer>
+            <p>&copy; 2025 Mis Lecturas. Todos los derechos reservados.</p>
+            <p>
+              Creado con mucho <span style="color: #ec8492">♥</span> por Amparo
+              Zamora.
+            </p>
+          </footer>
+          
+	</body>
 </html>

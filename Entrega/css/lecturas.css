@@ -75,38 +75,24 @@ ul li a:hover {
   margin: -75px 0 0 0;
 }
 
-/* Reset de estilos básicos */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-transform: capitalize;
-  font-family: sans-serif;
-}
-
-body {
-  font-family: "Roboto Condensed", sans-serif;
-  color: var(--color-texto);
-  background-color: var(--color-fondo);
-  text-align: center;
-  padding: 20px;
-}
+/* Estilos globales */
 
 h1 {
+  font-size: 36px;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 40px;
 }
 
-/* Estilos de la galería usando CSS Grid */
+/* Primer masonry con 3 columnas */
 .masonry-column {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas por defecto */
-  gap: 1rem;
-  padding: 20px 8%;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 10px;
+  padding: 0 8%;
 }
 
 .masonry-column .box {
-  background-color: var(--color-quinary);
+  background-color: var(--color-senary);
   padding: 15px;
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
   break-inside: avoid;
@@ -117,7 +103,7 @@ h1 {
 }
 
 .masonry-column .box img {
-  width: 100%; /* Mantiene las imágenes en su tamaño original */
+  width: 100%;
   height: auto;
   object-fit: contain;
   border-radius: 8px;
@@ -126,6 +112,7 @@ h1 {
 
 .masonry-column .box h2 {
   font-size: 20px;
+  text-align: center;
   color: var(--color-texto);
   padding-bottom: 5px;
 }
@@ -133,21 +120,84 @@ h1 {
 .masonry-column .box .descripcion {
   font-size: 14px;
   color: var(--color-texto);
+  text-align: center;
 }
 
-/* Para pantallas medianas (tablets) */
+.masonry-column .box .puntuacion {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+  justify-content: center; /* Alinea los sapitos horizontalmente */
+  align-items: center; /* Alinea los sapitos verticalmente */
+}
+
+.masonry-column .box .puntuacion img {
+  width: 20px;
+  height: auto;
+}
+
+/* Segundo masonry con 4 columnas */
+.titulo2 {
+  font-size: 60px;
+  font-family: katibeh, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--color-texto);
+}
+
+.masonry-column2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  gap: 10px;
+  padding: 0 8%;
+}
+
+.masonry-column2 .img-box {
+  background-color: transparent;
+  padding: 0;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.masonry-column2 .img-box img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Media Queries para pantallas pequeñas */
 @media (max-width: 768px) {
   .masonry-column {
     grid-template-columns: repeat(2, 1fr); /* 2 columnas */
   }
+
+  .masonry-column2 {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas */
+  }
 }
 
-/* Para pantallas pequeñas (móviles) */
 @media (max-width: 480px) {
   .masonry-column {
     grid-template-columns: 1fr; /* 1 columna */
   }
+
+  .masonry-column2 {
+    grid-template-columns: 1fr; /* 1 columna */
+  }
 }
+.p2 {
+  font-size: 20px;
+  color: var(--color-texto);
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 30px;
+}
+
 @media (max-width: 950px) {
   /* Menu */
   .menu {
@@ -197,27 +247,27 @@ h1 {
     opacity: 1;
     pointer-events: all;
   }
-  .imagen-inicio {
-    width: 100px;
-    height: 100px;
-  }
+}
+footer {
+  color: var(--color-texto);
+  padding: 20px 0;
+  margin-top: 250px;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
 
-  /* página inicio */
-  .titulo {
-    font-size: 50px;
-    color: var(--color-texto);
-    text-align: center;
-    font-family: Katibeh, sans-serif;
-  }
-  .parrafo1 {
-    font-size: 20px;
-    text-align: center;
-    font-family: "Roboto Condensed", sans-serif;
-  }
-  .p2 {
-    font-size: 15px;
-    color: var(--color-texto);
-    text-align: center;
-    font-family: "Roboto Condensed", sans-serif;
-  }
+footer p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+footer span {
+  font-weight: bold;
+}
+.ondas {
+  width: 100%;
+  height: auto;
+  margin: -290px 0px 0px 0px;
+  position: relative;
+  z-index: -1;
 }
