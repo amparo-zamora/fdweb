@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 @import url("http://meyerweb.com/eric/tools/css/reset/reset.css"); /* CSS Reset para compatibilidad entre navegadores */
 @import url("main.css"); /* Estilos principales */
+=======
+@import url("https://meyerweb.com/eric/tools/css/reset/reset.css"); /* CSS Reset para compatibilidad entre navegadores */
+@import url("main.css"); /* Estilos principales */
+@import url(practicas.css);
+>>>>>>> 7557297e8c3d7a4c787e49956b6d47c97f7945b1
