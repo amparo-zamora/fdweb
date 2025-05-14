@@ -149,3 +149,53 @@ footer p {
 footer span {
   font-weight: bold;
 }
+@media (max-width: 950px) {
+  /* Menu */
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: var(--color-tertiary);
+    color: var(--color-senary);
+    height: 100%;
+    overflow-y: auto;
+
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .menu a {
+    color: var(--color-senary);
+    line-height: 60px;
+  }
+
+  .open-menu {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .close-menu {
+    display: block;
+    position: absolute;
+    top: 80px;
+    right: 30px;
+  }
+
+  .menu_opened {
+    opacity: 1;
+    pointer-events: all;
+  }
+  }
