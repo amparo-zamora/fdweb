@@ -5,6 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>404 - Página no encontrada</title>
     <link rel="stylesheet" href="css/404.css" />
+    <style>
+      /* **Base styles - Mobile First** */
+      :root {
+        --color-fondo: #f7ddef;
+        --color-texto: #232220;
+        --color-tertiary: #bbcebb;
+        --color-quaternary: #ffb3c1;
+        --color-quinary: #f2b685;
+        --color-senary: #ec8492;
+        --color-septenary: #e68143;
+        --color-octonary: #d7f3ff;
+        --color-nonary: #cdceec;
+      }
+
+      /* Body styles */
+      body {
+        font-family: "Roboto Condensed", sans-serif;
+        background-color: var(--color-fondo);
+        color: var(--color-texto);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      /* Contenedor principal */
+      .container {
+        text-align: center;
+        padding: 20px;
+        border: 2px solid var(--color-quinary);
+        border-radius: 10px;
+        background-color: var(--color-quinary);
+        max-width: 600px;
+        width: 100%;
+      }
+
+      /* Título */
+      .titulo {
+        font-size: 70px;
+        color: var(--color-texto);
+        font-family: Katibeh, sans-serif;
+        margin-bottom: 20px;
+      }
+
+      /* Mensaje */
+      .parrafo1 {
+        font-size: 24px;
+        color: var(--color-texto);
+        font-family: "Roboto Condensed", sans-serif;
+        margin-bottom: 10px;
+      }
+
+      /* Código de error */
+      .error-code {
+        font-size: 100px;
+        font-weight: bold;
+        color: var(--color-senary);
+        margin: 30px 0;
+      }
+
+      /* Texto adicional */
+      .p2 {
+        font-size: 18px;
+        color: var(--color-texto);
+        margin-bottom: 30px;
+      }
+
+      /* Botón de inicio */
+      .btn {
+        padding: 10px 20px;
+        background-color: var(--color-senary);
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: var(--color-quaternary);
+      }
+
+      /* **Media Queries** */
+
+      /* Dispositivos medianos (hasta 950px) */
+      @media (max-width: 950px) {
+        .titulo {
+          font-size: 50px;
+        }
+
+        .parrafo1 {
+          font-size: 20px;
+        }
+
+        .error-code {
+          font-size: 80px;
+        }
+
+        .p2 {
+          font-size: 16px;
+        }
+      }
+
+      /* Pantallas más grandes (mayores a 950px) - ordenadores */
+      @media (min-width: 950px) {
+        .titulo {
+          font-size: 80px;
+        }
+
+        .parrafo1 {
+          font-size: 22px;
+        }
+
+        .error-code {
+          font-size: 120px;
+        }
+
+        .p2 {
+          font-size: 18px;
+        }
+      }
+    </style>
   </head>
   <body>
     <div class="container">
