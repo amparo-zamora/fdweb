@@ -1,0 +1,151 @@
+:root {
+  --color-fondo: #f7ddef;
+  --color-texto: #232220;
+  --color-tertiary: #bbcebb;
+  --color-quaternary: #ffb3c1;
+  --color-quinary: #f2b685;
+  --color-senary: #ec8492;
+  --color-septenary: #e68143;
+  --color-octonary: #d7f3ff;
+  --color-nonary: #cdceec;
+}
+.imagen-inicio {
+  height: 120px;
+  width: 120px;
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
+}
+
+.topheader {
+  padding: 30px;
+}
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.menu li {
+  padding: 0 35px 0 0;
+}
+
+.menu a {
+  color: var(--color-texto);
+  font-family: roboto condensed;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 120px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+ul li a:hover {
+  color: var(--color-senary);
+  transition: all 0.3s ease;
+}
+.open-menu,
+.close-menu {
+  display: none;
+}
+.review {
+  display: flex;
+  font-family: katibeh, sans-serif;
+  font-size: 4rem;
+  justify-content: center;
+  padding: 10px;
+
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  margin: 0;
+  padding: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--color-texto);
+  font-weight: bold;
+}
+
+.book-review {
+  display: flex;
+  background-color: var(--color-quinary);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.book-image {
+  flex: auto
+  margin-right: 20px;
+}
+
+.book-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.book-info {
+  flex: 1;
+  flex-direction: column;
+
+}
+
+.book-title {
+  font-size: 4rem;
+  font-family: katibeh, sans-serif;
+  color: var(--color-texto);
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+.book-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--color-texto);
+  padding-left: 30px;
+  float: right;
+}
+.saposmag {
+  bottom: 10px; 
+  right: 10px; 
+  width: 200px; 
+  height: auto;
+
+}
+.calificacion {
+margin: 0 0 0 250px ;
+}
+
+footer {
+  color: var(--color-texto);
+  padding: 20px 0;
+  margin-top: 150px;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+footer p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+footer span {
+  font-weight: bold;
+}

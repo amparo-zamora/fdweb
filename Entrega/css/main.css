@@ -1,3 +1,4 @@
+/* **Base styles - Mobile First** */
 :root {
   --color-fondo: #f7ddef;
   --color-texto: #232220;
@@ -10,131 +11,62 @@
   --color-nonary: #cdceec;
 }
 
+/* Body styles */
 body {
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   color: var(--color-texto);
   background-color: var(--color-fondo);
-}
-
-.topheader {
-  padding: 30px;
-}
-
-.topnav {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.menu {
-  display: flex;
-  list-style: none;
+  padding: 20px;
   margin: 0;
-  padding: 0;
-  float: right;
 }
 
-.menu li {
-  padding: 0 35px 0 0;
-}
-
-.menu a {
-  color: var(--color-texto);
-  font-size: 22px;
-  font-weight: 500;
-  line-height: 120px;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-ul li a:hover {
-  color: var(--color-senary);
-  transition: all 0.3s ease;
-}
-
-.open-menu,
-.close-menu {
-  display: none;
-}
-
-/* página inicio */
-.barra-avance {
-  width: 60%;
-  height: auto;
-  margin: -120px 0px 0px 350px;
-  position: relative;
-  z-index: 1;
-}
-
+/* Títulos y párrafos */
 .titulo {
-  font-size: 90px;
+  font-size: 40px;
   color: var(--color-texto);
   text-align: center;
   font-family: Katibeh, sans-serif;
-  padding: 30px;
 }
 
 .parrafo1 {
-  font-size: 25px;
+  font-size: 18px;
   color: var(--color-texto);
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
-  padding: 30;
 }
 
 .p2 {
-  font-size: 20px;
+  font-size: 15px;
   color: var(--color-texto);
   text-align: center;
   font-family: "Roboto Condensed", sans-serif;
   margin-bottom: 30px;
 }
 
-.curvas {
+/* Barra de avance */
+.barra-avance {
   width: 100%;
   height: auto;
-  margin: -900px 0px 0px 0px;
-  position: relative;
-  z-index: -1;
+  margin: 0 auto;
+  display: block;
 }
 
-.sapito-container {
-  position: absolute;
-  bottom: 100px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: 0 0 -600px 0;
-}
-
-.sapito {
-  width: 100px;
-  height: 100px;
-  opacity: 0.75;
-}
-
-/* Estilos generales calificación */
+/* Sistema de calificación */
 .calificacion {
-  font-family: Roboto condensed, sans-serif;
-  padding: 20px;
+  padding: 15px;
   background-color: var(--color-nonary);
   color: var(--color-texto);
   border-radius: 10px;
-  max-width: 900px;
-  margin: auto;
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
-strong {
-  font-weight: bold;
-}
-
+/* Contenido izquierdo y derecho */
 .left-content {
   display: flex;
   flex-direction: column;
@@ -143,14 +75,12 @@ strong {
 
 .left-content h2 {
   font-family: katibeh, sans-serif;
-  text-align: left;
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: var(--color-texto);
 }
 
 .left-content p {
-  text-align: left;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.6;
 }
 
@@ -167,400 +97,123 @@ strong {
   text-align: right;
 }
 
-/* Media Query para dispositivos móviles (480px o menos) */
-@media (max-width: 480px) {
-  .menu {
-    flex-direction: column;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    align-items: center;
-    background-color: var(--color-tertiary);
-    color: var(--color-senary);
-    height: 100%;
-    overflow-y: auto;
-    opacity: 0;
-    pointer-events: none;
-  }
+/* Curvas */
+.curvas {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  display: block;
+}
 
-  .menu a {
-    color: var(--color-senary);
-    line-height: 60px;
-  }
+/* Sapitos */
+.sapito-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
 
-  .open-menu {
-    display: block;
-    position: absolute;
-    top: 80px;
-    right: 30px;
-  }
+.sapito {
+  width: 70px;
+  height: 70px;
+  opacity: 0.75;
+}
 
-  .open-menu,
-  .close-menu {
-    display: block;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
+/* **Media Queries** */
 
-  .close-menu {
-    display: block;
-    position: absolute;
-    top: 80px;
-    right: 30px;
-  }
-
-  .menu_opened {
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  .imagen-inicio {
-    width: 100px;
-    height: 100px;
-  }
-
+/* Dispositivos medianos (hasta 950px) */
+@media (max-width: 950px) {
   .titulo {
     font-size: 50px;
-    color: var(--color-texto);
-    text-align: center;
-    font-family: Katibeh, sans-serif;
+    padding-bottom: 20px;
   }
 
   .parrafo1 {
     font-size: 20px;
-    text-align: center;
-    font-family: "Roboto Condensed", sans-serif;
+    padding-bottom: 20px;
   }
 
   .p2 {
-    font-size: 15px;
-    color: var(--color-texto);
-    text-align: center;
-    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
   }
 
   .barra-avance {
     width: 100%;
-    height: auto;
-    margin: -170px 0px 0px 13px;
+    margin: 200px 0 0 0;
   }
 
   .calificacion {
-    padding: 15px;
-    width: 100%;
-    margin: 0 0 0 0;
+    width: 80%;
   }
 
-  /* Centrar los elementos de la izquierda (título y párrafos) */
-  .left-content {
-    align-items: center; /* Centra los elementos */
-    text-align: center; /* Alinea el texto */
-  }
-
-  .left-content h2 {
-    font-size: 1.8rem; /* Ajustar tamaño de fuente para pantallas pequeñas */
-  }
-
-  .left-content p {
-    font-size: 1rem; /* Ajusta el tamaño del texto */
-  }
-
-  /* Centrar los criterios a la derecha */
-  .right-content {
-    align-items: center;
-    text-align: center; /* Centra el texto de los criterios */
-  }
-
-  .criterios {
-    font-size: 0.9rem; /* Ajusta el tamaño de los criterios */
-  }
-
-  /* Ajuste de la imagen de las curvas (graphics3) */
-  .curvas {
-    max-width: 100%;
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block;
-    margin: -600px 0 0 0; /* Centra la imagen */
-  }
-
-  /* Ajuste de los sapitos */
   .sapito-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los sapitos se ajusten mejor */
-    gap: 10px; /* Añade espacio entre los sapitos */
-    margin: 0 0 0 0;
+    justify-content: space-between;
   }
 
-  .sapito {
-    width: 80px; /* Ajusta el tamaño de los sapitos */
-    height: auto;
+  .curvas {
+    width: 100%;
+    margin-top: 30px;
   }
 }
 
-/* Media Query para dispositivos de tamaño mediano (950px o menos) */
-@media (max-width: 950px) {
-  .menu {
-    flex-direction: column;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    align-items: center;
-    background-color: var(--color-tertiary);
-    color: var(--color-senary);
-    height: 100%;
-    overflow-y: auto;
-
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .menu a {
-    color: var(--color-senary);
-    line-height: 60px;
-  }
-
-  .open-menu {
-    display: block;
-    position: absolute;
-    top: 80px;
-    right: 30px;
-  }
-
-  .open-menu,
-  .close-menu {
-    display: block;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-
-  .close-menu {
-    display: block;
-    position: absolute;
-    top: 80px;
-    right: 30px;
-  }
-
-  .menu_opened {
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  .imagen-inicio {
-    width: 100px;
-    height: 100px;
-  }
-
+/* Pantallas más grandes (mayores a 950px) - ordenadores */
+@media (min-width: 950px) {
   .titulo {
-    font-size: 50px;
-    color: var(--color-texto);
-    text-align: center;
-    font-family: Katibeh, sans-serif;
+    font-size: 80px;
+    padding-bottom: 15px;
   }
 
   .parrafo1 {
-    font-size: 20px;
-    text-align: center;
-    font-family: "Roboto Condensed", sans-serif;
+    font-size: 22px;
+    padding-bottom: 15px;
   }
 
   .p2 {
-    font-size: 15px;
-    color: var(--color-texto);
-    text-align: center;
-    font-family: "Roboto Condensed", sans-serif;
-  }
-
-  .barra-avance {
-    width: 100%;
-    height: auto;
-    margin: -170px 0px 0px 13px;
-  }
-
-  .calificacion {
-    padding: 15px;
-    width: 100%;
-    margin: 0 0 0 0;
-  }
-
-  /* Centrar los elementos de la izquierda (título y párrafos) */
-  .left-content {
-    align-items: center; /* Centra los elementos */
-    text-align: center; /* Alinea el texto */
-  }
-
-  .left-content h2 {
-    font-size: 1.8rem; /* Ajustar tamaño de fuente para pantallas pequeñas */
-  }
-
-  .left-content p {
-    font-size: 1rem; /* Ajusta el tamaño del texto */
-  }
-
-  /* Centrar los criterios a la derecha */
-  .right-content {
-    align-items: center;
-    text-align: center; /* Centra el texto de los criterios */
-  }
-
-  .criterios {
-    font-size: 0.9rem; /* Ajusta el tamaño de los criterios */
-  }
-
-  /* Ajuste de la imagen de las curvas (graphics3) */
-  .curvas {
-    max-width: 100%;
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block;
-    margin: -600px 0 0 0; /* Centra la imagen */
-  }
-
-  /* Ajuste de los sapitos */
-  .sapito-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los sapitos se ajusten mejor */
-    gap: 10px; /* Añade espacio entre los sapitos */
-    margin: 0 0 0 0;
-  }
-
-  .sapito {
-    width: 80px; /* Ajusta el tamaño de los sapitos */
-    height: auto;
-  }
-}
-
-/* Media Query para dispositivos de tamaño mediano (tabletas) */
-@media (max-width: 950px) {
-  .menu {
-    flex-direction: column;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    align-items: center;
-    background-color: var(--color-tertiary);
-    color: var(--color-senary);
-    height: 100%;
-    overflow-y: auto;
-
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  .menu a {
-    color: var(--color-senary);
-    line-height: 60px;
-  }
-
-  .open-menu {
-    display: block;
-    position: absolute;
-    top: 80px;
-    right: 30px;
-  }
-
-  .open-menu,
-  .close-menu {
-    display: block;
-    border: none;
-    background: none;
-    cursor: pointer;
-  }
-
-  .close-menu {
-    display: block;
-    position: absolute;
-    top: 80px;
-    right: 30px;
-  }
-
-  .menu_opened {
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  .imagen-inicio {
-    width: 100px;
-    height: 100px;
-  }
-
-  .titulo {
-    font-size: 50px;
-    color: var(--color-texto);
-    text-align: center;
-    font-family: Katibeh, sans-serif;
-  }
-
-  .parrafo1 {
     font-size: 20px;
-    text-align: center;
-    font-family: "Roboto Condensed", sans-serif;
-  }
-
-  .p2 {
-    font-size: 15px;
-    color: var(--color-texto);
-    text-align: center;
-    font-family: "Roboto Condensed", sans-serif;
   }
 
   .barra-avance {
-    width: 100%;
-    height: auto;
-    margin: -170px 0px 0px 13px;
+    width: 60%;
+    margin: -185px 0 0 350px;
   }
 
   .calificacion {
-    padding: 15px;
-    width: 100%;
-    margin: 0 0 0 0;
+    width: 60%;
   }
 
-  /* Centrar los elementos de la izquierda (título y párrafos) */
-  .left-content {
-    align-items: center; /* Centra los elementos */
-    text-align: center; /* Alinea el texto */
-  }
-
-  .left-content h2 {
-    font-size: 1.8rem; /* Ajustar tamaño de fuente para pantallas pequeñas */
-  }
-
-  .left-content p {
-    font-size: 1rem; /* Ajusta el tamaño del texto */
-  }
-
-  /* Centrar los criterios a la derecha */
-  .right-content {
-    align-items: center;
-    text-align: center; /* Centra el texto de los criterios */
-  }
-
-  .criterios {
-    font-size: 0.9rem; /* Ajusta el tamaño de los criterios */
-  }
-
-  /* Ajuste de la imagen de las curvas (graphics3) */
-  .curvas {
-    max-width: 100%;
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block;
-    margin: -600px 0 0 0; /* Centra la imagen */
-  }
-
-  /* Ajuste de los sapitos */
   .sapito-container {
-    display: flex;
-    flex-wrap: wrap; /* Permite que los sapitos se ajusten mejor */
-    gap: 10px; /* Añade espacio entre los sapitos */
-    margin: 0 0 0 0;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  .curvas {
+    width: 100%;
+    margin: -850px 0 0 0;
+    position: relative;
+    z-index: -1;
   }
 
   .sapito {
-    width: 80px; /* Ajusta el tamaño de los sapitos */
-    height: auto;
+    width: 150px;
+    height: 150px;
+  }
+
+  .sapito-container {
+    margin: -300px 0 0 260px;
+  }
+
+  .right-content {
+    align-items: flex-end;
+  }
+
+  .left-content {
+    align-items: flex-start;
+  }
+
+  .criterios {
+    font-size: 20px;
+    font-style: italic;
+    color: var(--color-senary);
+    text-align: right;
   }
 }
